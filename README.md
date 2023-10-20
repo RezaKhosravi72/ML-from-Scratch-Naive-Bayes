@@ -14,13 +14,9 @@ Develop a Naive Bayes classifier for classification problems without using exter
 ### Key aspects:
 
 - **NaiveBayes class** contains methods for fitting the model from training data and predicting new samples.
-
 - fit() method calculates mean, variance, and class priors for each feature dimension per class. This learns the probability distributions. 
-
 - predict() takes the log of posterior probabilities per class and returns the class with the highest probability via argmax(). 
-
 - _predict() calculates posterior as the log of priors multiplied by log PDF (probability density function) of each feature per class.
-
 - PDF uses Gaussian distribution with learned means and variances as it assumes independence between features (naive assumption).
 
 - **Data** for evaluation is generated using sklearn make_classification() with 1000 samples, 2 classes and 10 features. 
